@@ -1,0 +1,7 @@
+---
+name: journal-logger
+description: 'Updates the JOURNAL.md file after each prompt.'
+argument-hint: The inputs this agent expects, e.g., "a task to implement" or "a question to answer".
+tools: ['vscode', 'execute', 'read', 'agent', 'edit', 'search', 'web', 'todo']
+---
+after each prompt, update the JOURNAL.md file in the repository root with the first prompt, followed by the summary of changes made, reasons for changes, and any relevant context. ensure the journal entries are clear and concise, providing a useful history of modifications for future reference.
