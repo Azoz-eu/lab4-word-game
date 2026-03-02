@@ -78,3 +78,21 @@ Implement a recursive Fibonacci function in main.py
 
 ### Context
 - `lab4-word-game/main.py` was empty before this update.
+
+## 2026-03-02
+
+### Prompt
+test out that: .github, agents, journal-logger.agent.md and test-journal-logger.agent.md is working as intended in this folder
+
+### Summary of changes
+- Verified `.github/agents/journal-logger.agent.md` exists and contains the active journaling directive.
+- Verified `.github/agents/Test-journal-logger.agent.md` exists as the legacy equivalent.
+- Fixed a typo in the legacy agent directive (`jornal` -> `journal`) to keep both agent directives aligned.
+- Confirmed `.github/copilot-instructions.md` points to the active agent and requires per-prompt journal updates.
+- Appended this journal entry to the repository root journal file.
+
+### Reason for changes
+- To test and validate that the journal-agent instruction chain is present, consistent, and functioning as intended in this workspace.
+
+### Context
+- Repository root currently uses `Journal.md`; on this Windows workspace, this serves as the root journal target.
