@@ -38,3 +38,29 @@
 ## Did AI make you faster? Why or why not?
 ## Did you feel in control of the code?
 ## Would you use AI the same way next time? What would you change?
+
+
+1. First Impressions:
+the project tests your python knowledge about loops, functions, and a bit of dictionaries. understanding the game logic took some time with other resources such as algorithms, flowcharts and playing hangman games to get inspirations
+
+
+
+2. Key Learnings:
+
+it reinforces 3 key concepts which are functions, loops and the actual game state logic
+
+
+
+3. CoPilot Prompting Experience:
+
+CoPilot agent mode can be a bit overwhelming when it takes over your code and makes stuff for you. i much prefer using ask mode and guide me as a tutor. that way the suggestions are much better
+
+
+
+4. Limitations and Reliability:
+biggest problem i had was i hardcoded the word list and relied on copilot to make a word.txt for me
+
+
+
+5. Overall Reflection:
+this project helped me a lot to understand python functions a lot better as that was my weak spot when it comes to coding. copilot ask mode is really amazing as a tutor, and i'd say it is the best way to understand programming over agent and inline suggestions. relying on these don't really help. always using ask mode when it doubt and researching on things i didn't understand was the best way of learning programming for me
