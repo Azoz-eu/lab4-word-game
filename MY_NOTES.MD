@@ -119,3 +119,12 @@ input policy, reveal/penalty behavior, terminal states, and consistency conditio
 App bugs: 
 
 invalid input, repeated guesses, normalization issues, off-by-one life handling, and restart/state-reset errors
+
+
+Auto player:
+guesses a letter randomly with no strategy, just luck
+implemented with a function
+it needs access to guessed_letters to not repeat letters
+loop through the alphabet manually and build a list
+time.sleep(2.5) is useful to make the cpu not guess very fast
+autoplay can be asked to be turned on at the beginning of each round

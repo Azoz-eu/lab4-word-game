@@ -1,4 +1,5 @@
 import random
+import time
 from pathlib import Path
 
 DEFAULT_WORD_LIST = ["python", "hangman", "keyboard", "monitor"]
@@ -54,6 +55,12 @@ def get_guess(guessed_letters):
         else:
             return guess
 
+def auto_guess(guessed_letters):
+    avaiiable = []
+    for letter in "abcdefghijklmnopqrstuvwxyz":
+        if letter not in guessed_letters:
+            avaiiable.append(letter)
+    return random.choice(avaiiable)
 
 def apply_guess(secret_word, mask, guess):
     if guess in secret_word:
@@ -71,14 +78,22 @@ def play_game(round_number):
     guessed_letters = []
     lives = 6
 
+    mode = input("Auto play? (y/n)")
+    auto = mode == "y"
+
     while lives > 0 and "_" in mask:
         print("\nWord:", " ".join(mask))
         print("Lives:", lives)
         print("Guessed:", guessed_letters)
 
-        guess = get_guess(guessed_letters)
-        guessed_letters.append(guess)
+        if auto:
+            guess = auto_guess(guessed_letters)
+            print("Auto guess:", guess)
+            time.sleep(2.5)
+        else:
+            guess = get_guess(guessed_letters)
 
+        guessed_letters.append(guess)
         correct = apply_guess(secret_word, mask, guess)
 
         if correct:
